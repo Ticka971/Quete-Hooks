@@ -5,7 +5,7 @@ function Counter() {
   const [count, setCount] = useState(0);
   
   function handleCountChange(e){
-    setCount(e.target.value)
+    setCount(eval(e.target.value));
   }
   return (
     <div>
